@@ -7,7 +7,7 @@ import socket
 import string
 
 host=raw_input('What server -> ')
-port=raw_input('What port -> ')
+port=int(raw_input('What port -> '))
 nick="FitBot"
 ident="fitbot"
 realname="PFB"
