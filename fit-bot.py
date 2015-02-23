@@ -87,3 +87,7 @@ while 1:
                             irc.send('PRIVMSG ' + chan + ' : \r\n')
                         else:
                             irc.send('PRIVMSG ' + chan + ' :%s\r\n' % line)
+                            
+            #Command to get help
+            if command[0] == ':!help':
+                irc.send('PRIVMSG ' + chan + ' :Please include a ship name (!fit Wolf for example) \r\n')
